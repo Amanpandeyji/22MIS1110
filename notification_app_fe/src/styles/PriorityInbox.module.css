@@ -1,0 +1,109 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #1f2937;
+}
+
+.header .count {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.priorityGroup {
+  margin-bottom: 24px;
+}
+
+.groupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 6px 6px 0 0;
+  color: white;
+}
+
+.groupHeader h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.groupHeader .count {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.groupNotifications {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
+}
+
+.groupNotifications > div:last-child {
+  margin-bottom: 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6b7280;
+}
+
+.error {
+  background: #fee;
+  border: 1px solid #fcc;
+  color: #c33;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.error p {
+  margin: 0;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #9ca3af;
+}
+
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .header h2 {
+    font-size: 20px;
+  }
+
+  .groupHeader {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .groupHeader h3 {
+    font-size: 14px;
+  }
+}
